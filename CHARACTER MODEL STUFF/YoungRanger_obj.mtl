@@ -1,0 +1,50 @@
+# Blender MTL File: 'YoungRanger_blend.blend'
+# Material Count: 4
+newmtl Longbow_LongbowSet_Textur.000
+Ns 233.333333
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:\Users\Adam\Desktop\Sellable Models\1.LongbowSet, LowRes\LongbowSet_blend\LongbowSet_Texture.jpg
+map_Bump C:\\Users\\Adam\\Desktop\\Sellable Models\\1.LongbowSet, LowRes\\LongbowSet_blend\\LongbowSet_Texture.jpg
+
+
+newmtl Longbow_LongbowSet_Textur.001
+Ns 233.333333
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:\Users\Adam\Desktop\Sellable Models\1.LongbowSet, LowRes\LongbowSet_blend\LongbowSet_Texture.jpg
+map_Bump C:\\Users\\Adam\\Desktop\\Sellable Models\\1.LongbowSet, LowRes\\LongbowSet_blend\\LongbowSet_Texture.jpg
+
+
+newmtl Longbow_LongbowSet_Texture.jp
+Ns 233.333333
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:\Users\Adam\Desktop\Sellable Models\1.LongbowSet, LowRes\LongbowSet_blend\LongbowSet_Texture.jpg
+map_Bump C:\\Users\\Adam\\Desktop\\Sellable Models\\1.LongbowSet, LowRes\\LongbowSet_blend\\LongbowSet_Texture.jpg
+
+
+newmtl Ranger_YoungRanger_Texture.j
+Ns 233.333333
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:\Users\Adam\Desktop\Sellable Models\66. YoungRanger\YoungRanger_blend\YoungRanger_Texture.jpg
+map_Bump C:\\Users\\Adam\\Desktop\\Sellable Models\\66. YoungRanger\\YoungRanger_blend\\YoungRanger_Texture.jpg
+
+
