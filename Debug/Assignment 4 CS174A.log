@@ -1,0 +1,40 @@
+﻿Build started 6/3/2013 1:36:44 AM.
+     1>Project "C:\Users\Alvin\Documents\Visual Studio 2012\Projects\Term Project Take 2\Assignment 4 CS174A\Assignment 4 CS174A.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files\Common Files\MSVC\freeglut\include" /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt anim.cpp
+         anim.cpp
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\angel\angel.h(63): warning C4305: 'initializing' : truncation from 'double' to 'const GLfloat'
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\angel\mat.h(698): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\angel\mat.h(699): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\angel\mat.h(700): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\angel\mat.h(721): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\angel\mat.h(723): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\angel\mat.h(726): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\angel\mat.h(743): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\anim.cpp(310): warning C4305: 'argument' : truncation from 'double' to 'GLclampf'
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\anim.cpp(502): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\anim.cpp(503): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\anim.cpp(530): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\anim.cpp(531): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\anim.cpp(539): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\anim.cpp(541): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\anim.cpp(559): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\anim.cpp(560): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\anim.cpp(569): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\alvin\documents\visual studio 2012\projects\term project take 2\assignment 4 cs174a\anim.cpp(570): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Alvin\Documents\Visual Studio 2012\Projects\Term Project Take 2\Debug\Assignment 4 CS174A.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\Common Files\MSVC\freeglut\lib" glaux.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Alvin\Documents\Visual Studio 2012\Projects\Term Project Take 2\Debug\Assignment 4 CS174A.pdb" /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Alvin\Documents\Visual Studio 2012\Projects\Term Project Take 2\Debug\Assignment 4 CS174A.lib" /MACHINE:X86 Debug\anim.obj
+         Debug\Ball.obj
+         Debug\BallAux.obj
+         Debug\BallMath.obj
+         Debug\FrameSaver.obj
+         Debug\InitShader.obj
+         Debug\Squares.obj
+         Debug\tga.obj
+         Debug\Timer.obj
+         Assignment 4 CS174A.vcxproj -> C:\Users\Alvin\Documents\Visual Studio 2012\Projects\Term Project Take 2\Debug\Assignment 4 CS174A.exe
+     1>Done Building Project "C:\Users\Alvin\Documents\Visual Studio 2012\Projects\Term Project Take 2\Assignment 4 CS174A\Assignment 4 CS174A.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.65

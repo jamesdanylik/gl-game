@@ -1,5 +1,5 @@
 
-#include "Angel.h"
+#include "Angel/Angel.h"
 
 namespace Angel {
 
@@ -95,5 +95,3 @@ InitShader(const char* vShaderFile, const char* fShaderFile)
 }
 
 }  // Close namespace Angel block
-
-

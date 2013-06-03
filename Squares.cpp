@@ -1,4 +1,4 @@
-#include "angel.h"
+#include "angel/angel.h"
 #include "Squares.h"
 #include <cmath>
 
@@ -85,7 +85,7 @@ void generateSquare(GLuint program, ShapeData* squareData, vec3 loc)
 	square(0, 2, 3, 1, point3(0.0, 1.0, 0.0));
 	squareData->numVertices = numSquareVertices;
 	squareData->location = loc;
-	squareData->color = vec3(0.0);
+	squareData->color = vec3(1.0);
 
     // Create a vertex array object
     glGenVertexArrays( 1, &squareData->vao );

@@ -1,50 +1,34 @@
-#version 430
+#version 120
 
-in  vec4 vPosition;
-in  vec3 vNormal;
+attribute   vec4 vPosition;
+attribute   vec3 vNormal;
+attribute   vec2 vTexCoords;
 
-uniform  vec4 pickingColor;
-uniform  vec4 ambientProduct;
-uniform  vec4 diffuseProduct;
-uniform  vec4 specularProduct;
-uniform  float shininess;
-uniform  vec4 lightPosition;
-uniform  mat4 transMat;
-uniform  mat4 finishMat;
-uniform  mat4 projMat;
-uniform  mat4 viewMat;
-uniform  float scaleAmt;
-uniform  float theta;
-uniform  int picking;
+// output values that will be interpretated per-fragment
+varying  vec3 fN;
+varying  vec3 fE;
+varying  vec3 fL;
 
-out vec3 fN;
-out vec3 fE;
-out vec3 fL;
-out vec4 color;
-out mat4 modelView;
 
-void main() 
+uniform mat4 ModelView;
+uniform mat4 View;
+uniform vec4 LightPosition;
+uniform mat4 Projection;
+
+void main()
 {
-  mat4 scaleMat = mat4 (scaleAmt, 0.0, 0.0, 0.0,
-						 0.0, scaleAmt, 0.0, 0.0,
-						 0.0, 0.0, scaleAmt, 0.0,
-						 0.0, 0.0, 0.0, 1.0);
-  float psi = radians(theta);
-  mat4 rotateMat = mat4 (cos(psi), 0.0, sin(psi), 0.0,
-						0.0, 1.0, 0.0, 0.0,
-						-sin(psi), 0.0, cos(psi), 0.0,
-						0.0, 0.0, 0.0, 1.0);
-  mat4 modelMat;
+    vec4 N = vec4(vNormal, 0.0f);
+    fN =  (ModelView * N).xyz; //not correct, should be inverse(transpose(ModelView)); only for version 150 or higher.
+    fE = -(ModelView * vPosition).xyz;
+    fL =  (LightPosition).xyz;
+    //fL = (View * LightPosition).xyz;
 
-  modelMat = finishMat * rotateMat * transMat * scaleMat;
-  modelView = viewMat * modelMat;
+    if( LightPosition.w != 0.0 ) 
+    {
+        fL = LightPosition.xyz - vPosition.xyz;
+    }
 
-  fN = (modelMat*vec4(vNormal.x, vNormal.y, vNormal.z, 0.0)).xyz;
-  fE = (modelView*vPosition).xyz;
-  fL = lightPosition.xyz - (modelMat*vPosition).xyz;
-
-  color = pickingColor;
-
-  gl_Position = projMat * modelView * vPosition;
-
-} 
+    gl_Position = Projection * ModelView * vPosition;
+    gl_TexCoord[0].xy = vTexCoords;
+}
+//
