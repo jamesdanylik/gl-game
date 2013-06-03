@@ -6,7 +6,7 @@
 #define glBindVertexArray glBindVertexArrayAPPLE
 #endif
 
-#include "angel.h"
+#include "Angel/Angel.h"
 
 struct ShapeData
 {
