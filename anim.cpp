@@ -39,7 +39,7 @@
 #define glewExperimental int glewExperimentalAPPLE
 #define glewInit()
 #endif
-
+#include "Loader.h"
 FrameSaver FrSaver ;
 Timer TM ;
 
@@ -679,6 +679,14 @@ void idleCB(void)
 
 int main(int argc, char** argv) 
 {
+	
+std::vector< vec3 > vertices;
+std::vector< vec2 > uvs;
+std::vector< vec3 > normals; // Won't be used at the moment.
+bool res = loadOBJ("CHARMODSTEX/YoungRanger_obj.obj", vertices, uvs, normals);
+//end of loader test
+
+
     glutInit(&argc, argv);
     // If your code fails to run, uncommenting these lines may help.
     //glutInitContextVersion(3, 2);
