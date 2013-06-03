@@ -23,8 +23,8 @@ void main()
 	NormalTex = (NormalTex - 0.5) * 2.0;
 
     // Normalize the input lighting vectors
-	//vec3 N = normalize(NormalTex);
-    vec3 N = normalize(fN);
+	vec3 N = normalize(NormalTex);
+    //vec3 N = normalize(fN);
     vec3 E = normalize(fE);
     vec3 L = normalize(fL);
 

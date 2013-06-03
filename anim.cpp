@@ -151,8 +151,8 @@ void drawSquare(ShapeData square)
 	set_colour(square.color[0], square.color[1], square.color[2]);
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture( GL_TEXTURE_2D, g_textureID );
-	//glActiveTexture(GL_TEXTURE1);
-	//glBindTexture( GL_TEXTURE_2D, g_normalMapID );
+	glActiveTexture(GL_TEXTURE1);
+	glBindTexture( GL_TEXTURE_2D, g_normalMapID );
 	glUniform1i( uEnableTex, 1 );
 	//glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE );
     //glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE );
